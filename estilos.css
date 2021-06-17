@@ -102,10 +102,17 @@ nav {
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: inline-block;
+  position: relative;
 }
 
 #posts-principais .post .titulo {
+  position: absolute;
+  top: 20px;
+  opacity: 0;
+  padding: 10px;
   text-shadow: 1px 1px black;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 600ms ease;
 }
 
 #posts-principais .post img {
@@ -116,6 +123,11 @@ nav {
   margin-bottom: .5em;
 }
 
+#posts-principais .post:hover > h2 {
+  top: 6px;
+  opacity: 1;
+  cursor: pointer;
+}
 
 
 
@@ -146,6 +158,15 @@ nav {
   display: inline-block;
 }
 
+.novidade::before {
+  content: "Novidade!";
+  color: black;
+  background:orange;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+}
 
 
 
@@ -188,7 +209,18 @@ nav {
   font-size: 150%;
 }
 
+mark {
+  position: relative;
+}
 
+mark:active {
+  bottom: 2px;
+  right: 2px;
+}
+
+mark:hover {
+  cursor: pointer;
+}
 
 
 
