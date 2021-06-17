@@ -40,6 +40,10 @@ a:active {
   color: red;
 }
 
+nav {
+  background-color: rgba(0, 204, 147, 0.53);
+}
+
 
 /* --- Cabeçalho --- */
 #cabecalho {
@@ -49,9 +53,9 @@ a:active {
   text-align: center;
 }
 
-#cabecalho ul {
+/* #cabecalho ul {
   background-color: rgba(0, 204, 147, 0.53);
-}
+} */
 
 #cabecalho a {
   text-decoration: none;
@@ -59,7 +63,16 @@ a:active {
 }
 
 #menu-de-navegacao ul {
-  margin-bottom: 0;
+  width: 60%;
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+#menu-de-navegacao li {
+  margin: 10px;
 }
 
 
@@ -147,6 +160,7 @@ a:active {
   background-size: 300px;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
+  box-sizing: border-box;
 }
 
 #tags h1 {
