@@ -6,7 +6,8 @@ body {
   font-family: monospace;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -18,7 +19,7 @@ h2 {
   font-family: "Aldrich", sans-serif;
 }
 
-h1 + h2 {
+h1+h2 {
   font-size: 100%;
   margin-top: 0.5em;
   color: silver;
@@ -48,7 +49,7 @@ nav {
 /* --- Cabeçalho --- */
 header {
   background-color: rgba(0, 0, 0, .95);
-  box-shadow: 2px 10px 10px rgba(0,0,0, .25);
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, .25);
   padding-top: 1em;
   text-align: center;
 }
@@ -85,7 +86,7 @@ main {
 #boo2,
 #boo3 {
   position: fixed;
-  height: 40px;
+  height: 2.5rem;
   opacity: 0.3;
   transition: 1s;
 }
@@ -103,7 +104,7 @@ main {
 }
 
 #boo2 {
-  right: 60px; 
+  right: 60px;
 }
 
 #boo3 {
@@ -122,7 +123,7 @@ main {
 
 #posts-principais .post {
   width: 40%;
-  max-width: 400px;
+  max-width: 25rem;
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: inline-block;
@@ -133,7 +134,7 @@ main {
   position: absolute;
   top: 20px;
   opacity: 0;
-  padding: 10px;
+  padding: 0.625rem;
   text-shadow: 1px 1px black;
   background-color: rgba(255, 255, 255, 0.5);
   transition: all 600ms ease;
@@ -141,13 +142,13 @@ main {
 
 #posts-principais .post img {
   width: 100%;
-  max-width: 400px;
+  max-width: 25rem;
   box-sizing: border-box;
   border: 6px solid white;
   margin-bottom: .5em;
 }
 
-#posts-principais .post:hover > h2 {
+#posts-principais .post:hover>h2 {
   top: 6px;
   opacity: 1;
   cursor: pointer;
@@ -171,7 +172,7 @@ main {
   color: #333;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 3px;
+  padding: 0.18rem;
   display: inline-block;
   margin-right: 1em;
 }
@@ -185,20 +186,20 @@ main {
 .novidade::before {
   content: "Novidade!";
   color: black;
-  background:orange;
+  background: orange;
   border-radius: 5px;
   font-size: 15px;
   font-weight: bold;
-  padding: 5px;
+  padding: 0.3rem;
 }
 
 #ultimas-postagens time {
   color: black;
-  background:white;
+  background: white;
   border-radius: 5px;
   font-size: 15px;
   font-weight: bold;
-  padding: 5px;
+  padding: 0.3rem;
 }
 
 
@@ -207,17 +208,17 @@ main {
 
 aside {
   float: right;
-  width: 300px;
-  padding: 15px;
+  width: 18.75rem;
+  padding: 0.9rem;
   background-color: black;
   background-image: url(imgs/mula.webp);
   background-repeat: no-repeat;
-  background-size: 300px;
+  background-size: 18.75rem;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   box-sizing: border-box;
   position: sticky;
-  top:0px;
+  top: 0px;
 }
 
 aside h1 {
@@ -230,8 +231,8 @@ aside h1 {
 .tag-3 {
   display: inline-block;
   border-radius: 2px;
-  padding: 2px 4px;
-  margin: 2px;
+  padding: 0.125rem 0.25rem;
+  margin: 0.125rem;
   background-color: orange;
   color: white;
   text-shadow: 1px 1px black;
@@ -296,7 +297,7 @@ footer .logo-rodape {
   width: 100%;
 }
 
-.backdrop.desaparecido + #unmute {
+.backdrop.desaparecido+#unmute {
   display: none;
 }
 
